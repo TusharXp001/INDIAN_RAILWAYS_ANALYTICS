@@ -1,0 +1,9 @@
+name: 'indian_railways_analytics'
+profile: 'default'
+
+models:
+  indian_railways_analytics:
+    staging:
+      +schema: staging
+    marts:
+      +schema: mart
