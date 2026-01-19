@@ -1,0 +1,18 @@
+USE DATABASE RAILWAY_DB;
+USE SCHEMA RAW;
+
+CREATE TABLE IF NOT EXISTS TRAIN_INFO_RAW (
+    id STRING AUTOINCREMENT,
+    train_no STRING,
+    raw_json VARIANT,
+    ingestion_time TIMESTAMP_NTZ,
+    source STRING
+);
+
+CREATE TABLE IF NOT EXISTS TRAIN_LIVE_STATUS_RAW (
+    id STRING AUTOINCREMENT,
+    train_no STRING,
+    raw_json VARIANT,
+    ingestion_time TIMESTAMP_NTZ,
+    source STRING
+);
